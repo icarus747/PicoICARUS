@@ -11,6 +11,7 @@ This file tells the Pico which file to load when booting
 
 ### preload.py
 This file sets a boolean if GPIO pin 15 is grounded. If True, the PICO main.py file will not run the program and allow you to modify the settings without having to CTRL-C or reflash. 
+![Program enable/disable mode](images/preload.png)
 
 ### main.py
 This file checks for the preload boolean and if false will run the program.  First the secrets.json file is opened for user settings.  Serial ports are configured (default 9600) on UART0 and UART1. Wifi is established and listening on UDP port 2000. The program uses asyncio to run two threads.  1) To listen on port 2000 for NMEA $PGRMZ message and cache the value; 2) Every 1 seconds sends the cached pressure altitude value in ICARUS format out the serial ports. 
