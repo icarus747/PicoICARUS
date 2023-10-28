@@ -22,6 +22,7 @@ Used to modify wifi settings, serial baudrates, and NMEA UDP port.
 
 ## External Connection
 Power device with standard USB mini or hardwire in accordance with Raspberry Pi Pico W documentation. Ensure ground is shard with the device sending ICARUS data to on the RS232 (DSub connection).  Before the device receives a PGRMZ message it will send a test pressure altitude of 02121.  This can be changed or left blank in the code.
+![RS232 Ports](images/rs232_ports.png)
 
 ##### UART0 TX Ports
 - GP0 
