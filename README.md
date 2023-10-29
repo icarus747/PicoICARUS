@@ -27,7 +27,7 @@ Power device with standard USB mini or hardwire in accordance with Raspberry Pi 
 ##### UART0 TX Ports
 - GP0 
 - GP12
-- GP15
+- GP16
 ##### UART1 TX Ports
 - GP4
 - GP8
